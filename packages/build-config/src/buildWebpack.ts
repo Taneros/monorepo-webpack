@@ -6,7 +6,9 @@ import { buildPlugins } from './buildPlugins'
 import { buildResolvers } from './buildResolvers'
 import { EMode, IBuildWebpack } from './types/types'
 
-export function buildWebpack(options: IBuildWebpack): Configuration {
+type ConfigurationExt = Required<Pick<Configuration, 'plugins'>> & Configuration;
+
+export function buildWebpack(options: IBuildWebpack): ConfigurationExt {
 
   const { env, paths } = options;
 

@@ -16,10 +16,6 @@
       ]
     },
     "resolveJsonModule": true,
-    "types": [
-      "webpack",
-      "webpack-dev-server"
-    ]
   },
   "ts-node": {
     "compilerOptions": {

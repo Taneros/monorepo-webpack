@@ -2,13 +2,13 @@
   "name": "host",
   "version": "1.0.0",
   "scripts": {
-    "start": "cross-env webpack serve --env port=5000 --env mode=development",
+    "start": "cross-env webpack serve --env port=3000 --env mode=development",
     "build:dev": "webpack --env mode=development",
     "build:prod": "webpack --env mode=production",
     "build:proda": "webpack --env mode=production --env analyze=true",
     "build:mobile": "webpack --env mode=production --env platform=mobile",
     "build:desktop": "webpack --env mode=production --env platform=desktop",
-    "kill": "kill -9 $(lsof -t -i:5000)"
+    "kill": "kill -9 $(lsof -t -i:3000)"
   },
   "dependencies": {
     "@packages/shared": "*",
@@ -41,6 +41,7 @@
     "ts-loader": "^9.5.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2",
+    "webpack": "^5.88.2",
     "webpack-bundle-analyzer": "^4.9.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",

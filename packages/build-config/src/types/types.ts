@@ -7,7 +7,9 @@ export interface IEnvVariable {
   mode?: EMode;
   port?: number;
   analyzer?: boolean;
-  platform?: 'mobile' | 'desktop'
+  platform?: 'mobile' | 'desktop';
+  SHOP_REMOTE_URL: string;
+  ADMIN_REMOTE_URL: string;
 }
 
 
