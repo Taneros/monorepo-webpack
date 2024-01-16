@@ -27,7 +27,7 @@ export const App = () => {
       <>
         <div data-testId="App.TestIdDesktop"></div>
         <nav className={styles.nav}>
-          <Link to={'/about'}>about</Link>
+          <Link to={'/admin'}>about</Link>
           <Link to={'/shop'}>shop</Link>
         </nav>
         <h1>PLATFORM=desktop</h1>
@@ -44,7 +44,7 @@ export const App = () => {
   if (__PLATFORM__ === 'mobile') {
     return (
       <>
-        <Link to={'/about'}>about</Link>
+        <Link to={'/admin'}>about</Link>
         <Link to={'/shop'}>shop</Link>
         <h1>PLATFORM=mobile</h1>
         <p>{count}</p>

@@ -8,7 +8,8 @@ export function buildDevServer(params: { env: IEnvVariable }): Configuration['de
 
   return isDevMode ? {
     port: env.port ?? 3000,
-    open: true,
+    open: [env.open ?? '/'],
     historyApiFallback: true,
+    hot: "only",
   } : undefined
 }

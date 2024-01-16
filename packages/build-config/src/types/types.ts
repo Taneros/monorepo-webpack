@@ -6,6 +6,7 @@ export enum EMode {
 export interface IEnvVariable {
   mode?: EMode;
   port?: number;
+  open?: 'string';
   analyzer?: boolean;
   platform?: 'mobile' | 'desktop';
   SHOP_REMOTE_URL: string;
