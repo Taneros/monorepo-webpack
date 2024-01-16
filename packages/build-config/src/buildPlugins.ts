@@ -17,7 +17,11 @@ export function buildPlugins(params: IBuildWebpack): Configuration['plugins'] {
   const isProdMode = env.mode === EMode['production']
 
   const plugins: Configuration['plugins'] = [
-    new HtmlWebpackPlugin({ template: paths.html, favicon: path.resolve(paths.public, 'favicon.ico') }),
+    new HtmlWebpackPlugin({
+      template: paths.html,
+      favicon: path.resolve(paths.public, 'favicon.ico'),
+      publicPath: '/'
+    }),
     new DefinePlugin({
       __PLATFORM__: JSON.stringify(platform),
     }),

@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
 
 import { Suspense } from 'react';
 import { Shop } from '@/pages/Shop';
@@ -6,11 +6,11 @@ import { App } from '@/components/App/App';
 
 const routes = [
   {
-    path: '/',
+    path: '/shop',
     element: <App />,
     children: [
       {
-        path: '/shop',
+        path: '/shop/main',
         element: (
           <Suspense>
             <Shop />
